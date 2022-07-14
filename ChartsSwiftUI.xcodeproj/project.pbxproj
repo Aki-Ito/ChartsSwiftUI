@@ -7,18 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2CAA1DC4287FFF650042904C /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAA1DC3287FFF650042904C /* BarChartView.swift */; };
+		2CAA1DC6287FFF930042904C /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAA1DC5287FFF930042904C /* DataModel.swift */; };
 		2CC469F5285B21AD00B787FA /* ChartsSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC469F4285B21AD00B787FA /* ChartsSwiftUIApp.swift */; };
 		2CC469F7285B21AD00B787FA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC469F6285B21AD00B787FA /* ContentView.swift */; };
 		2CC469F9285B21AD00B787FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CC469F8285B21AD00B787FA /* Assets.xcassets */; };
 		2CC469FC285B21AD00B787FA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CC469FB285B21AD00B787FA /* Preview Assets.xcassets */; };
+		DA218FF539C469AD93388E5C /* Pods_ChartsSwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BBA207ED1C93729FE8FE510 /* Pods_ChartsSwiftUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		23F557AD794277E93CB3002B /* Pods-ChartsSwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartsSwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-ChartsSwiftUI/Pods-ChartsSwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
+		2CAA1DC3287FFF650042904C /* BarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
+		2CAA1DC5287FFF930042904C /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		2CC469F1285B21AD00B787FA /* ChartsSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartsSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CC469F4285B21AD00B787FA /* ChartsSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsSwiftUIApp.swift; sourceTree = "<group>"; };
 		2CC469F6285B21AD00B787FA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2CC469F8285B21AD00B787FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CC469FB285B21AD00B787FA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7BBA207ED1C93729FE8FE510 /* Pods_ChartsSwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChartsSwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1DBD74271C1A6968C4C3981 /* Pods-ChartsSwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartsSwiftUI.release.xcconfig"; path = "Target Support Files/Pods-ChartsSwiftUI/Pods-ChartsSwiftUI.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA218FF539C469AD93388E5C /* Pods_ChartsSwiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +46,8 @@
 			children = (
 				2CC469F3285B21AD00B787FA /* ChartsSwiftUI */,
 				2CC469F2285B21AD00B787FA /* Products */,
+				7CBA68BAE36309F67E0BAD88 /* Pods */,
+				B52AA0820135777D6FAE12CE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,6 +66,8 @@
 				2CC469F6285B21AD00B787FA /* ContentView.swift */,
 				2CC469F8285B21AD00B787FA /* Assets.xcassets */,
 				2CC469FA285B21AD00B787FA /* Preview Content */,
+				2CAA1DC3287FFF650042904C /* BarChartView.swift */,
+				2CAA1DC5287FFF930042904C /* DataModel.swift */,
 			);
 			path = ChartsSwiftUI;
 			sourceTree = "<group>";
@@ -67,6 +80,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		7CBA68BAE36309F67E0BAD88 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				23F557AD794277E93CB3002B /* Pods-ChartsSwiftUI.debug.xcconfig */,
+				F1DBD74271C1A6968C4C3981 /* Pods-ChartsSwiftUI.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B52AA0820135777D6FAE12CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7BBA207ED1C93729FE8FE510 /* Pods_ChartsSwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2CC469FF285B21AD00B787FA /* Build configuration list for PBXNativeTarget "ChartsSwiftUI" */;
 			buildPhases = (
+				1D0CA2ACA8ECCB9F2BB1842C /* [CP] Check Pods Manifest.lock */,
 				2CC469ED285B21AD00B787FA /* Sources */,
 				2CC469EE285B21AD00B787FA /* Frameworks */,
 				2CC469EF285B21AD00B787FA /* Resources */,
+				4A15300A5AD963F5FA20FD44 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,13 +164,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1D0CA2ACA8ECCB9F2BB1842C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChartsSwiftUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A15300A5AD963F5FA20FD44 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChartsSwiftUI/Pods-ChartsSwiftUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChartsSwiftUI/Pods-ChartsSwiftUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChartsSwiftUI/Pods-ChartsSwiftUI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2CC469ED285B21AD00B787FA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2CC469F7285B21AD00B787FA /* ContentView.swift in Sources */,
+				2CAA1DC6287FFF930042904C /* DataModel.swift in Sources */,
 				2CC469F5285B21AD00B787FA /* ChartsSwiftUIApp.swift in Sources */,
+				2CAA1DC4287FFF650042904C /* BarChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +337,7 @@
 		};
 		2CC46A00285B21AD00B787FA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23F557AD794277E93CB3002B /* Pods-ChartsSwiftUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -290,6 +367,7 @@
 		};
 		2CC46A01285B21AD00B787FA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1DBD74271C1A6968C4C3981 /* Pods-ChartsSwiftUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
