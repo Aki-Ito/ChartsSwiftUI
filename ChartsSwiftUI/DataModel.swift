@@ -6,7 +6,7 @@
 //
 
 import Foundation
-struct DataModel: Identifiable{
+struct DataModel: Decodable,Identifiable{
     var type: String
     var count: Double
     var id = UUID()

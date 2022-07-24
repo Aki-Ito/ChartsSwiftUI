@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import Charts
+//import Charts
 struct BarChartView: View {
     var data: [DataModel] = [
         .init(type: "Cube", count: 5),
@@ -14,15 +14,15 @@ struct BarChartView: View {
         .init(type: "Pyramid", count: 4)
     ]
     var body: some View{
-        if #available(iOS 16.0, *) {
-            Chart{
-                ForEach(data){shape in
-                    BarMark(x: .value("ShapeType", shape.type), y: .value("TotalCount", shape.count))
-                }
-            }
-        } else {
-            // Fallback on earlier versions
-        }
+//        if #available(iOS 16.0, *) {
+//            Chart{
+//                ForEach(data){shape in
+//                    BarMark(x: .value("ShapeType", shape.type), y: .value("TotalCount", shape.count))
+//                }
+//            }
+//        } else {
+//            // Fallback on earlier versions
+//        }
     }
 }
 
