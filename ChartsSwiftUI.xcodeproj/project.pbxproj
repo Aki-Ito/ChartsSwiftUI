@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C28BC24288E4AD30043D996 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C28BC23288E4AD30043D996 /* ListView.swift */; };
 		2CAA1DC4287FFF650042904C /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAA1DC3287FFF650042904C /* BarChartView.swift */; };
 		2CAA1DC6287FFF930042904C /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAA1DC5287FFF930042904C /* DataModel.swift */; };
 		2CAC8E8C288D81C200F6E1FD /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAC8E8B288D81C200F6E1FD /* APIClient.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		23F557AD794277E93CB3002B /* Pods-ChartsSwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartsSwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-ChartsSwiftUI/Pods-ChartsSwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
+		2C28BC23288E4AD30043D996 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		2CAA1DC3287FFF650042904C /* BarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
 		2CAA1DC5287FFF930042904C /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		2CAC8E8B288D81C200F6E1FD /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				2CAA1DC3287FFF650042904C /* BarChartView.swift */,
 				2CAA1DC5287FFF930042904C /* DataModel.swift */,
 				2CAC8E8B288D81C200F6E1FD /* APIClient.swift */,
+				2C28BC23288E4AD30043D996 /* ListView.swift */,
 			);
 			path = ChartsSwiftUI;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 			files = (
 				2CC469F7285B21AD00B787FA /* ContentView.swift in Sources */,
 				2CAA1DC6287FFF930042904C /* DataModel.swift in Sources */,
+				2C28BC24288E4AD30043D996 /* ListView.swift in Sources */,
 				2CC469F5285B21AD00B787FA /* ChartsSwiftUIApp.swift in Sources */,
 				2CAC8E8C288D81C200F6E1FD /* APIClient.swift in Sources */,
 				2CAA1DC4287FFF650042904C /* BarChartView.swift in Sources */,
