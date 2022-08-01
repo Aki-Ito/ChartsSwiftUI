@@ -9,11 +9,12 @@ import SwiftUI
 
 struct ListView: View {
     @State private var dataModel = [DataModel]()
-    func getData(){
-        APIClient.shared.getDegreeofSentiment(encodedWord: "abc") { response in
+    @State private var encodeString: String = ""
+    func getData(string: String){
+        APIClient.shared.getDegreeofSentiment(encodedWord: string) { response in
             switch response{
             case .success(let data):
-                print(data)
+                self.dataModel.append(data)
                 break
             case .failure(let error):
                 print("decodeエラー:\(error)")
@@ -22,7 +23,22 @@ struct ListView: View {
         }
     }
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            List{
+                ForEach(dataModel){data in
+                    Text(String(data.negaposi))
+                }
+            }.frame(width: 400, height: 600)
+            
+            TextField("エンコードしたい文字列",text: $encodeString)
+                .frame(width: 300, height: 24)
+            Button(action: {
+                self.getData(string: self.encodeString)
+            }){
+                Text("おす")
+            }
+
+        }
     }
 }
 

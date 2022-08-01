@@ -29,6 +29,7 @@
 		2CC469F6285B21AD00B787FA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2CC469F8285B21AD00B787FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CC469FB285B21AD00B787FA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2CF9C1DD2895F9EC005EAF3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		7BBA207ED1C93729FE8FE510 /* Pods_ChartsSwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChartsSwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1DBD74271C1A6968C4C3981 /* Pods-ChartsSwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartsSwiftUI.release.xcconfig"; path = "Target Support Files/Pods-ChartsSwiftUI/Pods-ChartsSwiftUI.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,6 +67,7 @@
 		2CC469F3285B21AD00B787FA /* ChartsSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				2CF9C1DD2895F9EC005EAF3B /* Info.plist */,
 				2CC469F4285B21AD00B787FA /* ChartsSwiftUIApp.swift */,
 				2CC469F6285B21AD00B787FA /* ContentView.swift */,
 				2CC469F8285B21AD00B787FA /* Assets.xcassets */,
@@ -355,6 +357,7 @@
 				DEVELOPMENT_TEAM = VYY6NT3X7Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChartsSwiftUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -385,6 +388,7 @@
 				DEVELOPMENT_TEAM = VYY6NT3X7Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChartsSwiftUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
