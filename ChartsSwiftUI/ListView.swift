@@ -10,6 +10,7 @@ import SwiftUI
 struct ListView: View {
     @State private var dataModel = [DataModel]()
     @State private var encodeString: String = ""
+    
     func getData(string: String){
         APIClient.shared.getDegreeofSentiment(encodedWord: string) { response in
             switch response{
@@ -22,22 +23,22 @@ struct ListView: View {
             }
         }
     }
+    
     var body: some View {
         VStack{
             List{
                 ForEach(dataModel){data in
-                    Text(String(data.negaposi))
+                    Text("ネガポジ度:\(String(data.negaposi))")
                 }
             }.frame(width: 400, height: 600)
             
             TextField("エンコードしたい文字列",text: $encodeString)
-                .frame(width: 300, height: 24)
+                .frame(width: 300, height: 40)
             Button(action: {
                 self.getData(string: self.encodeString)
             }){
                 Text("おす")
             }
-
         }
     }
 }
