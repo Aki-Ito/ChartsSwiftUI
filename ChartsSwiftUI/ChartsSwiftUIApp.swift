@@ -7,11 +7,12 @@
 
 import SwiftUI
 
+@available(iOS 16.0, *)
 @main
 struct ChartsSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            ListView()
+            APILineChartView()
         }
     }
 }
